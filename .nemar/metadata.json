@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Dataset of EEG recordings of pediatric patients with epilepsy based on the 10-20 system ",
+  "description": "This dataset comprises EEG recordings from 30 pediatric patients with focal or generalized epilepsy, with automated high-frequency oscillation (HFO) markings. The study investigates ripple rates (80-250 Hz) in scalp EEG as non-invasive biomarkers of epileptogenicity across the pediatric age range. The dataset includes 3 hours of sleep EEG data per subject with processed N3 sleep intervals and bipolar channel referencing, along with clinically validated HFO detections.",
+  "methods_description": "EEG data were recorded during the first 3 hours of sleep in 30 children and adolescents with epilepsy. Raw data were recorded in .edf format using the 10-20 system. Processed data involved sleep stage identification, extraction of 5-minute intervals from N3 sleep stages, and bipolar referencing across nearest-neighbor channels (52 bipolar channels total). High-frequency oscillations (ripples, 80-250 Hz) were detected using an automated, clinically validated detector.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,6 +14,31 @@
     "Georgia Ramantani": {},
     "Johannes Sarnthein": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "high-frequency oscillations"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "pediatric"
+    },
+    {
+      "term": "sleep"
+    },
+    {
+      "term": "biomarkers"
+    },
+    {
+      "term": "ripples"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003555.v1.0.1",
@@ -36,46 +63,20 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "998.6 MB (17 files)"
+    "30.3 GB (258 files)"
   ],
   "formats": [
     ".edf",
     ".gitattributes",
     ".json",
     ".md",
-    ".tsv"
-  ],
-  "description": "This dataset comprises EEG recordings from 30 pediatric patients with focal or generalized epilepsy, with automated high-frequency oscillation (HFO) markings. The study investigates ripple rates (80-250 Hz) in scalp EEG as non-invasive biomarkers of epileptogenicity across the pediatric age range. The dataset includes 3 hours of sleep EEG data per subject with processed N3 sleep intervals and bipolar channel referencing, along with clinically validated HFO detections.",
-  "methods_description": "EEG data were recorded during the first 3 hours of sleep in 30 children and adolescents with epilepsy. Raw data were recorded in .edf format using the 10-20 system. Processed data involved sleep stage identification, extraction of 5-minute intervals from N3 sleep stages, and bipolar referencing across 52 nearest-neighbor channels. High-frequency oscillations (ripples, 80-250 Hz) were detected using an automated, clinically validated HFO detector.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
-    },
-    {
-      "term": "high-frequency oscillations"
-    },
-    {
-      "term": "pediatric"
-    },
-    {
-      "term": "sleep EEG"
-    },
-    {
-      "term": "biomarkers"
-    },
-    {
-      "term": "ripples"
-    }
+    ".tsv",
+    ".yml"
   ],
   "source_hash": "acff256a73a9580ba4c8688ffa97c59d5aac6d960b901e442bc17ae059db5030"
 }
