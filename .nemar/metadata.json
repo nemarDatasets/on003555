@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Dataset of EEG recordings of pediatric patients with epilepsy based on the 10-20 system ",
-  "description": "This dataset comprises EEG recordings from 30 pediatric patients with focal or generalized epilepsy, with automated high-frequency oscillation (HFO) markings. The study investigates ripple rates (80-250 Hz) in scalp EEG as non-invasive biomarkers of epileptogenicity across the pediatric age range. The dataset includes 3 hours of sleep EEG data per subject with processed N3 sleep intervals and bipolar channel referencing, along with clinically validated HFO detections.",
-  "methods_description": "EEG data were recorded during the first 3 hours of sleep in 30 children and adolescents with epilepsy. Raw data were recorded in .edf format using the 10-20 system. Processed data involved sleep stage identification, extraction of 5-minute intervals from N3 sleep stages, and bipolar referencing across nearest-neighbor channels (52 bipolar channels total). High-frequency oscillations (ripples, 80-250 Hz) were detected using an automated, clinically validated detector.",
+  "description": "This dataset contains scalp EEG recordings with high-frequency oscillation (HFO) markings from 30 pediatric patients with focal or generalized epilepsy. The first three hours of sleep EEG were recorded and processed to detect ripple-band (80-250 Hz) oscillations in bipolar channels using an automated, clinically validated HFO detector. Derived data include selected N3 sleep intervals with candidate HFO event annotations, aimed at investigating age-related effects on non-invasive epileptogenicity biomarkers.",
+  "methods_description": "Three hours of sleep EEG were recorded per subject using the 10-20 system. Sleep stages were identified from annotations, and 5-minute intervals from N3 sleep were extracted. Bipolar referencing was applied using nearest-neighbour channel pairs, yielding 52 bipolar channels. An automated, clinically validated HFO detector was used to identify ripple-band (80-250 Hz) oscillations in these intervals.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,39 +19,36 @@
       "term": "EEG"
     },
     {
-      "term": "high-frequency oscillations"
-    },
-    {
       "term": "Epilepsy",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
+      "term": "high-frequency oscillations"
+    },
+    {
       "term": "pediatric"
     },
     {
-      "term": "sleep"
+      "term": "sleep EEG"
     },
     {
-      "term": "biomarkers"
-    },
-    {
-      "term": "ripples"
+      "term": "biomarker"
     }
   ],
   "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds003555.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
     {
       "identifier": "https://github.com/nemarDatasets/on003555",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003555",
+      "identifier": "10.18112/openneuro.ds003555.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003555",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
@@ -68,7 +65,7 @@
     "eeg"
   ],
   "sizes": [
-    "30.3 GB (258 files)"
+    "28.26 GB (258 files)"
   ],
   "formats": [
     ".edf",
@@ -78,5 +75,5 @@
     ".tsv",
     ".yml"
   ],
-  "source_hash": "acff256a73a9580ba4c8688ffa97c59d5aac6d960b901e442bc17ae059db5030"
+  "source_hash": "d024d8c6f0a2e33b463c6f193880a9acd2567af0442e7506d6391bb6ea2382e8"
 }
