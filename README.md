@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003555-blue)](https://doi.org/10.82901/nemar.on003555)
+
 # Dataset of EEG recordings containing HFO markings for 30 pediatric patients with epilepsy 
 
 ## Summary
